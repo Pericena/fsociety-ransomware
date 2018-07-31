@@ -1,0 +1,95 @@
+<hta:application id="oBVC" 
+icon="./images/Icon.ico"
+
+	innerBorder="no"
+	maximizeButton="yes"
+	minimizeButton="yes"
+	navigable="yes"
+	scroll="yes"
+	scrollFlat="no"
+	selection="no"
+applicationname="BSOD" 
+version="1.0" 
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+windowstate="maximize"/
+
+
+
+
+
+setlocal EnableDelayedExpansion
+set i=0
+for %%a in ("Escritorio Calendario Explorer Tienda"
+            "Correo     Fotos      Mapas    SkyDrive"
+            "Contactos  Finanzas   Deportes"
+            "Mensajes   ElTiempo   Noticias") do (
+   set /A i+=1, j=0
+   for %%b in (%%~a) do (
+      set /A j+=1
+      set "option[!i!,!j!]=%%b"
+   )
+)
+
+
+
+echo Get options from an image subdivided in rectangular areas.
+
+cls
+:nextOption
+   echo/
+   for /F "delims=" %%a in ('mshta.exe "%~F0"') do set "HTAreply=%%a"
+   echo Option selected: "!option[%HTAreply%]!"
+   if "%HTAreply%" equ "4,3" goto endProg
+   exit
+goto nextOption
+:endProg
+echo End of example
+goto :EOF
+cls
+
+
+
+<!-- saved from url=(0058)http://localhost/fsociety-ransomware-MrRobot-master/pages/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Fsociety ransomware</title>
+	<link rel="shortcut icon" href="Icon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="./css/styles1.css" type="text/css">
+	
+	
+</head>
+<body><center>
+<div id="container">
+    <div id="header_ransom">
+    	<p class="ophello">#OPdailyallowance.</p>
+	<p class="ophello">Your files are encrypted.</p>
+	<p class="information">	
+		To get the key to decrypt files, you have to paid <span class="red">5.9 million USD.</span> if payment is not made 
+		by <span class="red">tommorow night</span> we'll brick your entire system.<br><br>
+		More instructions forthcoming. - fsociety.
+		</p><p class="time">Time left: <span class="red">00</span>H <span class="red">00</span>m <span class="red">00</span>s  
+	</p>
+	<div class="more_information">
+		<p class="minfo" style="width:20%">Your system : <span class="red"></span></p>
+		<p class="minfo" style="width:35%">First connect IP : <span class="red"> flag</span></p>
+		<p class="minfo" style="width:40%">Total encrypted : <span class="red"></span> encrypted files.</p>
+	</div>
+    </div>
+    <div id="menu_ransom">
+	<a href="#"><button class="button">Refresh</button></a>
+	<button class="button red">Payment</button>
+	<button class="button">FAQ</button>
+	<button class="button red">Decrypt one file for free</button>
+	<button class="button">Support</button>
+    </div>
+    <div id="jester"></div>
+    <div class="diclaimer">
+	JΞSTΞR ✪ ΔCTUAL³³º¹ <br> <br>
+    There's an unequal amount of good and bad in most things. The trick is to
+    figure out the ratio and act accordingly.
+    </div>
+</div></center>
+
+</body></html>
