@@ -4,6 +4,7 @@
 
 -El ransomware lo crean estafadores con un gran conocimiento en programación informática. Puede entrar en su PC mediante un adjunto de correo electrónico o a través de su navegador si visita una página web infectada con este tipo de malware. También puede acceder a su PC a través de su red.
 
+- https://aminoapps.com/c/cyber-hacking/home/
 
 ### Sigueme en las redes Sociales:
 - 🌎Blogger          https://lpericena.blogspot.com/
